@@ -15,12 +15,33 @@
   <!-- GLightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Prevent selection and dragging globally */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    img {
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+      user-drag: none;
+      pointer-events: none;
+    }
+    /* Re-enable selection for contact info and titles */
+    .hero-content h1, .subtitle, .info-item, .section-title, .project-info h3, .project-info p {
+      user-select: text;
+    }
+  </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
   <header>
     <nav class="container">
-      <div class="logo">JONDU JESSE</div>
+      <div class="logo" data-section="about">JONDU JESSE</div>
       <ul class="nav-links">
         <li><a href="#" class="active" data-section="about">About</a></li>
         <li><a href="#" data-section="skills">Skills</a></li>
@@ -43,7 +64,11 @@
   <main>
     <section id="about" class="section active">
       <div class="container hero">
-        <div class="hero-content" data-aos="fade-up">
+        <div class="hero-image" data-aos="fade-right">
+          <!-- Protected Image: Using root file with escaped space -->
+          <img src="profile.jpg" alt="Jondu Jesse" class="profile-photo" draggable="false" onmousedown="return false;">
+        </div>
+        <div class="hero-content" data-aos="fade-left">
           <h1>Creative <span class="highlight">Developer</span> & Designer</h1>
           <p class="subtitle">IT Support Specialist | Software Developer | Graphics Designer | Broadcast & Live Stream Engineer</p>
           <p>Highly skilled professional with expertise in technical support, software development, creative visual design, and professional broadcast engineering. **Dedicated to excellence in Graphics since 2022.**</p>
@@ -68,24 +93,29 @@
               <li>Data Collection Systems</li>
               <li>Python (Pandas, NumPy)</li>
               <li>HTML5, CSS3, JavaScript</li>
+              <li>Firebase Firestore</li>
             </ul>
           </div>
           <div class="skill-category">
             <i class="fas fa-paint-brush"></i>
-            <h3>Design</h3>
+            <h3>Design Tools</h3>
             <ul>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
-              <li>Brand Identity</li>
+              <li>CorelDRAW</li>
+              <li>Canva Professional</li>
+              <li>Brand Identity Design</li>
             </ul>
           </div>
           <div class="skill-category">
             <i class="fas fa-tools"></i>
-            <h3>IT Support</h3>
+            <h3>IT & Systems</h3>
             <ul>
-              <li>Troubleshooting</li>
+              <li>Troubleshooting & Repair</li>
               <li>Network Maintenance</li>
               <li>System Administration</li>
+              <li>XAMPP/Local Server</li>
+              <li>Zencoder/AI Workflow</li>
             </ul>
           </div>
           <div class="skill-category">
@@ -95,6 +125,7 @@
               <li>OBS Studio Mastery</li>
               <li>Live Stream Troubleshooting</li>
               <li>Camera Scene Operation</li>
+              <li>vMix Pro Integration</li>
             </ul>
           </div>
         </div>
@@ -106,27 +137,30 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
           <div class="project-card">
+            <div class="project-img"><i class="fas fa-church"></i></div>
+            <div class="project-info">
+              <h3>Church Counseling Registration</h3>
+              <p>A serverless registration system for church counseling with Firebase Firestore integration and real-time admin dashboard.</p>
+              <div class="tags"><span>Firebase</span><span>Firestore</span><span>HTML5/JS</span></div>
+              <a href="https://github.com/jessethegreat6190/churchregistration" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img"><i class="fas fa-calculator"></i></div>
+            <div class="project-info">
+              <h3>Advanced Multi-Calculator</h3>
+              <p>Professional calculator featuring basic math operations and a comprehensive unit converter for height and length.</p>
+              <div class="tags"><span>JavaScript</span><span>Unit Conversion</span><span>CSS3</span></div>
+              <a href="https://github.com/jessethegreat6190/Advanced-Multi-Calculator" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
             <div class="project-img"><i class="fas fa-chart-line"></i></div>
             <div class="project-info">
               <h3>Loan Prediction Model</h3>
               <p>An advanced machine learning model developed using Python to predict loan eligibility based on user data.</p>
               <div class="tags"><span>Python</span><span>ML</span><span>Data Science</span></div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img"><i class="fas fa-globe"></i></div>
-            <div class="project-info">
-              <h3>Corporate Portfolio Website</h3>
-              <p>A fully responsive, multi-section website featuring dynamic navigation and modern UI/UX principles.</p>
-              <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img"><i class="fas fa-user-plus"></i></div>
-            <div class="project-info">
-              <h3>User Registration System</h3>
-              <p>Secure onboarding platform with real-time form validation and user profile management.</p>
-              <div class="tags"><span>Web Dev</span><span>Validation</span><span>UI Design</span></div>
+              <a href="https://github.com/jessethegreat6190/loan-prediction" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
           </div>
           <div class="project-card">
@@ -362,39 +396,7 @@
           </div>
           <div class="testimonial-card">
             <p>"Jesse's attention to detail in design is unmatched."</p>
-            <h4>- Boutique Designs</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"Great software developer. Delivered the project ahead of schedule."</p>
-            <h4>- Startup Innovators</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"Professional, humble, and very technical."</p>
-            <h4>- Faith Community</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"He made our registration system so simple to use."</p>
-            <h4>- Education Portal</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"His troubleshooting skills saved our conference!"</p>
-            <h4>- Tech Conference 2024</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"Clean code and great design. A rare combination."</p>
-            <h4>- Web Solutions</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"The posters Jesse designed increased our event turnout by 40%."</p>
-            <h4>- Youth Foundation</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"Excellent communication and technical execution."</p>
-            <h4>- Enterprise Apps</h4>
-          </div>
-          <div class="testimonial-card">
-            <p>"Jesse is our go-to for all things tech and design."</p>
-            <h4>- Prime Marketing</h4>
+            <h4>- Startup Pulse</h4>
           </div>
         </div>
       </div>
@@ -403,30 +405,25 @@
     <section id="contact" class="section">
       <div class="container" data-aos="fade-up">
         <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <p><a href="mailto:Jesseford619@gmail.com">Jesseford619@gmail.com</a></p>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-phone-alt"></i>
-              <p><a href="tel:+256782627260">+256 782 627 260</a></p>
-            </div>
-            <div class="info-item">
-              <i class="fab fa-whatsapp"></i>
-              <p><a href="https://wa.me/256754490237" target="_blank">+256 754 490 237</a></p>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>Kampala, Uganda</p>
-            </div>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jondujesse@gmail.com">jondujesse@gmail.com</a>
           </div>
+          <div class="info-item">
+            <i class="fas fa-phone" data-section="contact"></i>
+            <a href="https://wa.me/256754490237" target="_blank">+256 754 490 237</a>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kampala, Uganda</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/jessethegreat6190" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </section>
@@ -434,12 +431,35 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Jondu Jesse. Built with passion.</p>
+      <p>&copy; 2026 Jondu Jesse. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- GLightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="script.js"></script>
-</body>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+
+    // Simple anti-screenshot attempt (disables common keys)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'PrintScreen' || (e.ctrlKey && e.shiftKey && (e.key === 'S' || e.key === 's')) || (e.metaKey && e.shiftKey && e.key === '4')) {
+        alert('Protection active: Screenshots and downloads are restricted.');
+        e.preventDefault();
+      }
+    });
+  </script>
+<a href="https://wa.me/256754490237" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a></body>
 </html>
+
+
+

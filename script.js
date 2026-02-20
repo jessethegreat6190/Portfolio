@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
 
   const showSection = (targetId) => {
+    const waIcon = document.querySelector(".whatsapp-float");
+    if (waIcon) {
+      if (targetId === "contact") {
+        waIcon.classList.add("show");
+      } else {
+        waIcon.classList.remove("show");
+      }
+    }
     sections.forEach(section => {
       section.classList.remove('active');
       if (section.id === targetId) {
@@ -55,7 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  menuToggle.addEventListener('click', () => {
+  
+  // Initial WhatsApp visibility check
+  const initSection = document.querySelector(".section.active");
+  if (initSection) {
+    showSection(initSection.id);
+  }
+menuToggle.addEventListener('click', () => {
     navList.classList.toggle('mobile-active');
   });
 });
+
+
+
+
+
