@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "portfolio-5b977"
-  }
+    "default": "portfolio-5b977",
+    "production": "jondu-jesse-portfolio"
+  },
+  "targets": {},
+  "etags": {}
 }
