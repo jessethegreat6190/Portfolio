@@ -1,30 +1,36 @@
-# Application Letter — Junior Developer / Designer
+# Application Letter — Biometric Officer
 
 **Jondu Jesse**
 Kampala, Uganda
 jondujesse@gmail.com | +256 754 490 237
 GitHub: github.com/jessethegreat6190
+Portfolio: https://portfolio-5b977.web.app/
 
 ---
 
-**[Date]**
+June 12, 2026
 
 **Hiring Manager**
-**Thraets**
+**Simba Group**
+Kampala, Uganda
 
-**RE: Application for Junior Developer / Designer Position**
+**RE: Application for Biometric Officer Position (Ref: SG-VAS-UG-06-04)**
 
 Dear Hiring Manager,
 
-I am writing to express my interest in the Junior Developer / Designer position at Thraets. As a creative IT specialist and digital content creator based in Kampala, I bring hands-on experience in full-stack web development, graphics design, and AI-assisted project delivery.
+I am writing to apply for the Biometric Officer position at Simba Group, as advertised. I bring hands-on experience in biometric data collection systems, customer service operations, and IT equipment management — combined with fluency in English and Luganda.
 
-I have built and deployed a range of applications including a college events management system (PHP/MySQL), a church registration system (Firebase), a React-based image gallery, a dairy management system, and an SMS notification system. I leverage AI tools like Claude, ChatGPT, and Copilot to accelerate development, debug code, and deliver high-quality results faster.
+I recently developed a biometric enrollment and identity verification system (UPDMS) that includes fingerprint capture via browser-based API, webcam photo acquisition, and OCR-based ID document scanning using Tesseract.js. This project required precision, attention to data security, and a workflow designed for accuracy — directly aligning with the responsibilities of collecting biometric data for Visa Application Centre operations.
 
-Beyond development, I produce video content, design graphics, and manage live streaming as part of my work with Encounter Church media team. I am currently pursuing a Diploma in Information Technology at ISBAT University.
+In my IT support and media work, I have:
+- Operated and maintained technical equipment in fast-paced, customer-facing environments
+- Assisted applicants and users through processes with patience and clear communication
+- Managed sensitive data with strict confidentiality
+- Collaborated with diverse teams across cultural backgrounds
 
-I am confident that my technical skills, creativity, and passion for building impactful digital solutions make me a strong fit for this role. I would welcome the opportunity to discuss how I can contribute to the team at Thraets.
+I hold a Diploma in Information Technology from ISBAT University and I am available to start immediately. I am confident that my technical background, customer service orientation, and fluency in both English and Luganda make me a strong candidate for this role.
 
-Thank you for your time and consideration.
+I would welcome the opportunity to discuss how my skills can contribute to the Simba Group team. Thank you for your consideration.
 
 Yours sincerely,
 
