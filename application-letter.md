@@ -28,7 +28,7 @@ In my IT support and media work, I have:
 - Managed sensitive data with strict confidentiality
 - Collaborated with diverse teams across cultural backgrounds
 
-I hold a Diploma in Information Technology from ISBAT University and I am available to start immediately. I am confident that my technical background, customer service orientation, and fluency in both English and Luganda make me a strong candidate for this role.
+I hold a Diploma in Information Technology from ISBAT University (final semester completed June 2026) and I am available to start immediately. I am confident that my technical background, customer service orientation, and fluency in both English and Luganda make me a strong candidate for this role.
 
 I would welcome the opportunity to discuss how my skills can contribute to the Simba Group team. Thank you for your consideration.
 
