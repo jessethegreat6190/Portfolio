@@ -161,8 +161,8 @@ run.bold = True
 run.font.size = Pt(11)
 doc.add_paragraph('Grace of Jesus Christ Ministries | 2024–Present')
 items = [
-    'Enter, verify, and maintain member registration records (name, contact, membership details) in a digital database, ensuring accuracy and completeness against source forms',
-    'Process registrations during services/events, capturing data quickly and accurately under time pressure',
+    'Enter, verify, and maintain 500+ member registration records (name, contact, membership details) in a digital database, ensuring accuracy and completeness against source forms',
+    'Process 20+ registrations per service/event, capturing data quickly and accurately under time pressure',
     'Perform daily record reconciliation, identifying and correcting data discrepancies or duplicate entries',
     'Maintain confidential handling of personal information and audit-ready, easily retrievable records',
     'Produce registrations/attendance summaries and reports for administrative use',
