@@ -156,45 +156,45 @@ run.font.color.rgb = RGBColor(0, 51, 102)
 
 # Church Registration System
 p = doc.add_paragraph()
-run = p.add_run('Church Registration System Developer')
+run = p.add_run('Church Registration Records & Data Management')
 run.bold = True
 run.font.size = Pt(11)
 doc.add_paragraph('Grace of Jesus Christ Ministries | 2024–Present')
 items = [
-    'Designed and deployed a comprehensive registration platform capturing and maintaining member records with strict data accuracy and confidentiality protocols',
-    'Implemented role-based access controls and audit trails ensuring data integrity across administrative, pastoral care, and event management functions',
-    'Managed sensitive personal information (names, contact details, membership records) in compliance with data protection principles',
-    'Developed reporting dashboards for membership statistics and attendance tracking, supporting decision-making with accurate, retrievable records',
+    'Enter, verify, and maintain member registration records (name, contact, membership details) in a digital database, ensuring accuracy and completeness against source forms',
+    'Process registrations during services/events, capturing data quickly and accurately under time pressure',
+    'Perform daily record reconciliation, identifying and correcting data discrepancies or duplicate entries',
+    'Maintain confidential handling of personal information and audit-ready, easily retrievable records',
+    'Produce registrations/attendance summaries and reports for administrative use',
 ]
 for item in items:
     doc.add_paragraph(f'• {item}')
 
 # Dairy Management System
 p = doc.add_paragraph()
-run = p.add_run('Dairy Management System Developer')
+run = p.add_run('Operational Records & Data System')
 run.bold = True
 run.font.size = Pt(11)
-doc.add_paragraph('[Farm/Organization Name] | 2024–Present')
+doc.add_paragraph('Dairy Management | 2024–Present')
 items = [
-    'Built a full-stack PHP/MySQL system managing detailed operational records including animal inventory, milk production logs, health check schedules, feeding programs, and financial transactions',
-    'Designed data capture interfaces ensuring accurate entry of daily operational metrics with validation checks preventing errors',
-    'Implemented role-based access for different user types (owner, manager, worker) while maintaining centralized data integrity',
-    'Created comprehensive reporting features for production tracking, expense management, and performance analysis',
+    'Capture and maintain detailed daily operational records (inventory, production logs, health schedules, feeding, transactions) in a database, entering data accurately from day-to-day records',
+    'Verify data against source documents and application input validation to ensure completeness and accuracy',
+    'Safeguard departmental records for easy retrieval and audit purposes',
+    'Prepare monthly production and expense summaries/reports',
 ]
 for item in items:
     doc.add_paragraph(f'• {item}')
 
 # Media Team
 p = doc.add_paragraph()
-run = p.add_run('Technical Support & Media Team')
+run = p.add_run('Technical Support & Data Assistance')
 run.bold = True
 run.font.size = Pt(11)
 doc.add_paragraph('Encounter Church Media Team | 2022–Present')
 items = [
-    'Provided customer-facing technical support during live events and broadcasts, assisting attendees and participants through technical processes',
-    'Operated and maintained multimedia equipment ensuring reliable performance during high-pressure, time-sensitive operations',
-    'Managed multiple tasks simultaneously in fast-paced environments while maintaining attention to detail and production quality',
-    'Collaborated with diverse teams to deliver consistent service to audiences of 200+ people',
+    'Provided customer-facing support, assisting users/attendees through technical processes with patience and clear communication',
+    'Maintained records and schedules for events and equipment; coordinated data flow between teams to ensure timely, accurate information',
+    'Operated and maintained equipment in fast-paced, deadline-driven environments while maintaining attention to detail',
 ]
 for item in items:
     doc.add_paragraph(f'• {item}')
