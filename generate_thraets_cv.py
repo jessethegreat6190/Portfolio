@@ -136,10 +136,16 @@ run.font.size = Pt(13)
 run.font.color.rgb = RGBColor(0, 51, 102)
 
 p = doc.add_paragraph()
+run = p.add_run('Bachelor of Science in Applied Information Technology (B.Sc. AIT)')
+run.bold = True
+run.font.size = Pt(11)
+doc.add_paragraph('ISBAT University, Kampala | Currently pursuing (2nd year completed)')
+
+p = doc.add_paragraph()
 run = p.add_run('Diploma in Information Technology')
 run.bold = True
 run.font.size = Pt(11)
-doc.add_paragraph('ISBAT University, Kampala | Jan 2023 — Jun 2026 (Final semester completed)')
+doc.add_paragraph('ISBAT University, Kampala | Jan 2023 — Jun 2026 (Completed)')
 
 # ADDITIONAL
 p = doc.add_paragraph()
