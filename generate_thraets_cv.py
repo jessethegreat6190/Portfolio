@@ -139,13 +139,65 @@ p = doc.add_paragraph()
 run = p.add_run('Bachelor of Science in Applied Information Technology (B.Sc. AIT)')
 run.bold = True
 run.font.size = Pt(11)
-doc.add_paragraph('ISBAT University, Kampala | Currently pursuing (2nd year completed)')
+doc.add_paragraph('ISBAT University, Kampala | 2026 — Present (pursuing)')
 
 p = doc.add_paragraph()
 run = p.add_run('Diploma in Information Technology')
 run.bold = True
 run.font.size = Pt(11)
-doc.add_paragraph('ISBAT University, Kampala | Jan 2023 — Jun 2026 (Completed)')
+doc.add_paragraph('ISBAT University, Kampala | 2024 — 2025 (Completed)')
+
+# VOLUNTEER EXPERIENCE
+p = doc.add_paragraph()
+run = p.add_run('VOLUNTEER EXPERIENCE')
+run.bold = True
+run.font.size = Pt(13)
+run.font.color.rgb = RGBColor(0, 51, 102)
+
+# Church Registration System
+p = doc.add_paragraph()
+run = p.add_run('Church Registration System Developer')
+run.bold = True
+run.font.size = Pt(11)
+doc.add_paragraph('Grace of Jesus Christ Ministries | 2024–Present')
+items = [
+    'Designed and deployed a comprehensive registration platform capturing and maintaining member records with strict data accuracy and confidentiality protocols',
+    'Implemented role-based access controls and audit trails ensuring data integrity across administrative, pastoral care, and event management functions',
+    'Managed sensitive personal information (names, contact details, membership records) in compliance with data protection principles',
+    'Developed reporting dashboards for membership statistics and attendance tracking, supporting decision-making with accurate, retrievable records',
+]
+for item in items:
+    doc.add_paragraph(f'• {item}')
+
+# Dairy Management System
+p = doc.add_paragraph()
+run = p.add_run('Dairy Management System Developer')
+run.bold = True
+run.font.size = Pt(11)
+doc.add_paragraph('[Farm/Organization Name] | 2024–Present')
+items = [
+    'Built a full-stack PHP/MySQL system managing detailed operational records including animal inventory, milk production logs, health check schedules, feeding programs, and financial transactions',
+    'Designed data capture interfaces ensuring accurate entry of daily operational metrics with validation checks preventing errors',
+    'Implemented role-based access for different user types (owner, manager, worker) while maintaining centralized data integrity',
+    'Created comprehensive reporting features for production tracking, expense management, and performance analysis',
+]
+for item in items:
+    doc.add_paragraph(f'• {item}')
+
+# Media Team
+p = doc.add_paragraph()
+run = p.add_run('Technical Support & Media Team')
+run.bold = True
+run.font.size = Pt(11)
+doc.add_paragraph('Encounter Church Media Team | 2022–Present')
+items = [
+    'Provided customer-facing technical support during live events and broadcasts, assisting attendees and participants through technical processes',
+    'Operated and maintained multimedia equipment ensuring reliable performance during high-pressure, time-sensitive operations',
+    'Managed multiple tasks simultaneously in fast-paced environments while maintaining attention to detail and production quality',
+    'Collaborated with diverse teams to deliver consistent service to audiences of 200+ people',
+]
+for item in items:
+    doc.add_paragraph(f'• {item}')
 
 # ADDITIONAL
 p = doc.add_paragraph()
